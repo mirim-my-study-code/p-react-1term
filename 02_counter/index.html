@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>02_counter</title>
     <style>
-        #counter{
+        .counter{
             display: flex;
             flex-direction: column;
             justify-content: center; /* 가로 */
@@ -15,17 +15,30 @@
         .clickBtn{
             flex-direction: row;
         }
+        .cursor-effect {
+            position: fixed;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            pointer-events: none;
+            background: white;
+            mix-blend-mode: difference;
+            transform: translate(-50%, -50%);
+        }
     </style>
 </head>
 <body>
-    <div id="counter">
-        <h1 id="result">0</h1>
-        <div class="clickBtn">
-            <button onclick="plus()">+</button>
-            <button onclick="plus(+2)">++</button>
-            <button onclick="plus(-1)">-</button>
+    <canvas id="canvas">
+        <div></div>
+        <div class="" class="cursor-effect counter">
+            <h1 id="result">0</h1>
+            <div class="clickBtn">
+                <button onclick="plus()">+</button>
+                <button onclick="plus(+2)">++</button>
+                <button onclick="plus(-1)">-</button>
+            </div>
         </div>
-    </div>
-    <script src="./main.js"></script>
+        <script src="./main.js"></script>
+    </canvas>
 </body>
 </html>
