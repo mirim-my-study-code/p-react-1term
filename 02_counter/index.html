@@ -15,30 +15,15 @@
         .clickBtn{
             flex-direction: row;
         }
-        .cursor-effect {
-            position: fixed;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            pointer-events: none;
-            background: white;
-            mix-blend-mode: difference;
-            transform: translate(-50%, -50%);
-        }
     </style>
 </head>
 <body>
-    <canvas id="canvas">
-        <div></div>
-        <div class="" class="cursor-effect counter">
-            <h1 id="result">0</h1>
-            <div class="clickBtn">
-                <button onclick="plus()">+</button>
-                <button onclick="plus(+2)">++</button>
-                <button onclick="plus(-1)">-</button>
-            </div>
-        </div>
-        <script src="./main.js"></script>
-    </canvas>
+    <h1 id="result">0</h1>
+    <div class="clickBtn">
+        <button onclick="plus()">+</button>
+        <button onclick="plus(+2)">++</button>
+        <button onclick="plus(-1)">-</button>
+    </div>
+    <script src="./main.js"></script>
 </body>
 </html>
