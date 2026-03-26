@@ -47,8 +47,11 @@ const plusButton = document.getElementsByTagName("button")[0];
 //     count--;
 //     resultH1.innerHTML = count;
 // }
+resultH1.innerHTML = count; // js에 남겨둠 (?), 갑임(?)
 
 function plus(number = 1){
-    count += number;
-    resultH1.innerHTML = count;
+  count += number;
+  resultH1.innerHTML = count;
 }
+
+
